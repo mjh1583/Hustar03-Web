@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>HUSTAR_3rd Free</title>
+
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+  <script src="../js/swiper/swiper.min.js"></script>
+
+  <link rel="stylesheet" href="../js/swiper/swiper.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+ </head>
+ <body>
+ 	
+ 	<!-- 상단 헤더 -->
+ 	<div class="header">
+		<div>
+			<div class="logo">
+				<h1><a href="../index.html"><img src="../img/logo_w.png" /></a></h1>
+			</div>
+			<div class="top-btn">
+				<ul>
+					<li><a href="../member/login.html">로그인</a></li>
+					<li><a href="../member/join.html">회원가입</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 메뉴 -->
+	<div class="menu">
+		<div>
+			<ul>
+				<li>
+					<a href="#none">회사소개</a>
+					<ul class="submenu">
+						<li><a href="../about/intro.html">회사소개</a></li>
+						<li><a href="../about/location.html">오시는길</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none">게시판</a>
+					<ul class="submenu">
+						<li><a href="../bbs/notice_list.html">공지사항</a></li>
+						<li><a href="../bbs/free_list.html">자유게시판</a></li>
+						<li><a href="../bbs/gallery.html">갤러리</a></li>
+					</ul>
+				</li>
+				<li><a href="../booking/list.html">장소예약</a></li>
+				<li><a href="../member/mypage.html">마이페이지</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- 자유게시판 화면 -->
+	<div class="contents">	
+		<!-- 자유게시판 화면 -->
+		<div class="notice-wrap">
+			<div class="notice-box">
+				<h1>자유게시판</h1>
+				
+				<div class="search-box">
+					<input type="text">
+					<button>검색</button>
+				</div>
+				
+				<div class="notice-table">
+					<ul class="table-hd">
+						<li>
+							<div class="no">번호</div>
+							<div class="subject">제목</div>
+							<div class="name">글쓴이</div>
+							<div class="date">등록일</div>
+						</li>
+					</ul>
+					<ul class="table-bd">
+						<li>
+							<div class="no">3</div>
+							<div class="subject"><a href="../bbs/free_view.html">자유글 입니다.</a></div>
+							<div class="name">관리자</div>
+							<div class="date">2021-04-20</div>
+						</li>
+						<li>
+							<div class="no">2</div>
+							<div class="subject"><a href="../bbs/free_view.html">홈페이지에 오신걸 환영합니다.</a></div>
+							<div class="name">관리자</div>
+							<div class="date">2021-04-20</div>
+						</li>
+						<li>
+							<div class="no">1</div>
+							<div class="subject"><a href="../bbs/free_view.html">자유글 입니다.</a></div>
+							<div class="name">관리자</div>
+							<div class="date">2021-04-20</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="paging">
+					<ul>
+						<li><a href="#none">처음으로</a></li>
+						<li><a href="#none">이전</a></li>
+						<li class="on"><a href="#none">1</a></li>
+						<li><a href="#none">2</a></li>
+						<li><a href="#none">3</a></li>
+						<li><a href="#none">다음</a></li>
+						<li><a href="#none">마지막</a></li>
+					</ul>
+				</div>
+
+				<div class="bbs-btn-box">
+					<a href="../bbs/free_write.html">글쓰기</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!-- 하단 정보 -->
+	<div class="footer">
+		<div>
+			<h1>HUSTAR-3rd</h1>
+			<p>대구 동구 동내로 70</p>
+			<p>대표자 : 휴스타 3기 교육생</p>
+			<p>이메일 : macoder7@gmail.com</p>
+			<p>연락처 : 010-1234-5678</p>
+			<span>copyright(c) HUSTAR_3rd. All rights reserved.</span>
+		</div>
+	</div>
+
+ </body>
+</html>

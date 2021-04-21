@@ -1,0 +1,838 @@
+/* 초기화 */
+html {overflow-y:scroll}
+body {margin:0;padding:0;font-size:0.75em; font-family:'Nanum Gothic', 'Malgun Gothic', dotum, sans-serif; background:#f5f5f5;}
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
+h1, h2, h3, h4, h5, h6 {font-size:17px; font-family:'NanumSquare','Malgun Gothic', dotum, sans-serif}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
+
+ul, dl,dt,dd {margin:0;padding:0;list-style:none}
+legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
+label, input, button, select, img {vertical-align:middle;font-size:1em}
+input, button {margin:0;padding:0; font-family:'Nanum Gothic', 'Malgun Gothic', dotum, sans-serif;font-size:1em}
+input[type="submit"]{cursor:pointer}
+button {cursor:pointer}
+
+textarea, select {font-family:'Nanum Gothic', 'Malgun Gothic', dotum, sans-serif;font-size:1em}
+select {margin:0}
+p {margin:0;padding:0;word-break:break-all}
+hr {display:none}
+pre {overflow-x:scroll;font-size:1.1em}
+a {color:#000;text-decoration:none}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* set
+body {
+	margin:0;
+	padding:0;
+}
+html, h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	padding:0;
+	border:0;
+}
+ul, li, dl, dt, dd {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a {
+	text-decoration:none;
+	color:#000;
+} */
+
+img {
+	/* 이미지를 반응형으로 최적화 시키기 위함 */
+	max-width:100%;
+	height:auto;
+	width: auto\9;
+}
+
+/* 헤더 스타일 */
+.header {
+	background:#004d95;
+	/* 
+		overflow:hidden을 사용해야 float속성 사용시 튀는 부분을 없애줌
+	*/
+	overflow:hidden;
+	padding:20px;
+}
+.header > div {
+	overflow:hidden;
+	/* 반응형 웹 사이트를 만들기 위해 max-width를 사용함*/
+	max-width:1200px;
+	margin:0 auto;
+}
+.header > div > div.logo{}
+.header > div > div.top-btn{}
+.header .logo {
+	float:left;
+}
+.header .logo h1 {
+	font-size:17px;
+}
+.header .logo h1 a{
+	display:block;
+	padding:5px;
+}
+.header .logo h1 img{
+	width:100px;
+}
+.header .top-btn {
+	float:right;
+}
+.header .top-btn ul{
+	overflow:hidden;
+	margin-top:10px;
+}
+.header .top-btn ul li {
+	float:left;
+	margin-left:10px;
+}
+.header .top-btn ul li a {
+	font-size:15px;
+	/* display:block은 html의 block 속성을 가지도록 함 */
+	display:block;
+	padding:5px;
+	color:#fff;
+}
+
+/* 메뉴 스타일 */
+.menu {
+	background: #005baf;
+}
+.menu > div {
+	max-width:1200px;
+	margin:0 auto;
+}
+.menu > div > ul {
+	/* 가운데 정렬 */
+	text-align:center;
+}
+.menu > div > ul > li {
+	display:inline-block;
+	/* li 속성이 기준이 되게끔 함 */
+	position: relative;
+}
+.menu > div > ul > li a {
+	display:block;
+	padding:10px;
+	font-size:20px;
+	margin:10px 40px;
+	color:#fff;
+}
+.menu > div > ul > li a:hover {
+	color:#fff700;
+}
+.menu > div > ul > li:hover ul.submenu {
+	display: block;
+}
+.menu > div > ul > li > ul.submenu {
+	/* 평소엔 서브메뉴가 보이지 않음 */
+	position: absolute;
+	z-index: 9;
+	background: #0072db;
+	display: none;
+	width: 100%;
+	border-bottom: 1px solid #000;
+}
+.menu > div > ul > li > ul.submenu a {
+	margin: 5px;
+	font-size: 14px;
+	color: #fff;
+	transition: all 0.3s;
+}
+.menu > div > ul > li > ul.submenu a:hover {
+	background: #096dca;
+}
+/* 상단 배너 */
+.banner {
+	max-width:1200px;
+	margin:0 auto;
+	text-align:center;
+}
+.banner .swiper-container {
+	margin:0 auto;
+}
+.banner .swiper-container img {
+	max-width:1200px;
+	height:500px;
+}
+.banner .swiper-button-next {
+	margin:0 auto;
+}
+.banner .swiper-button-prev {
+	margin:0 auto;
+}
+.banner .swiper-pagination {
+	display:inline-block;
+	margin:0 auto;
+}
+
+/* 메인 게시물 박스 스타일 */
+/* 탭 메뉴 */
+.tab-menu ul {
+	overflow:hidden;
+	text-align:center;
+}
+.tab-menu ul li {
+	float:left;
+	width:33.33%;
+}
+.tab-menu ul li a{
+	display:block;
+	padding:5px 10px;
+	border-bottom: 1px solid #e1e1e1;
+	font-size:17px;
+	color: #888;
+}
+.tab-menu ul li.on a{
+	font-weight:bold;
+	color:#057bf5;
+	border-bottom: 1px solid #057bf5;
+}
+.tab-menu ul li:hover a{
+	color:#057bf5;
+}
+/* 탭 컨텐츠 */
+.tab-con {}
+.tab-con ul li {
+	overflow:hidden;
+}
+.tab-con ul li:hover {
+	border-bottom: 1px dashed #e1e1e1;
+}
+.tab-con ul li a:before {
+	content:"";
+	display:inline-block;
+	width:3px;
+	height:3px;
+	background:#ccc;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius:50%;
+	vertical-align:middle;
+	margin-right:5px;
+}
+.tab-con ul li a {
+	float:left;
+	display:block;
+	padding:5px;
+	font-size: 15px;
+}
+.tab-con ul li span {
+	float:right;
+	padding:5px;
+	font-size:13px;
+	color:#888;
+}
+
+/* 우측 배너 */
+.bbs-box > div {
+	overflow:hidden;
+	max-width:1200px;
+	margin:0 auto;
+}
+.bbs-box > div > .board-box{
+	float:left;
+	width:50%;
+}
+.bbs-box > div > .board-box > div {
+	padding:10px;
+}
+.bbs-box > div > .right-banner{
+	float:right;
+	width:50%;
+}
+.bbs-box > div > .right-banner .r-slide {
+	margin:0 auto;
+}
+.bbs-box >.right-banner > r-slide > .swiper-pagination {
+	display:inline-block;
+	margin:0 auto;
+}
+
+/* footer 스타일 */
+.footer {
+	background: #444;
+	color: #ccc;
+}
+.footer > div {
+	padding:20px;
+}
+.footer h1 {
+	font-size:17px;
+}
+.footer p{
+	font-size:13px;
+	line-height:160%;
+	padding: 0;
+	margin: 0;
+}
+.footer span{
+	font-size:12px;
+	color: #999;
+}
+
+/* 로그인 화면 스타일 */
+.login-box {
+	padding: 40px;
+}
+.login-box h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.login-box .login {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #e1e1e1;
+	border-radius: 25px;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 20%);
+}
+.login-box .login li {
+	margin: 5px;
+}
+.login-box .login li input {
+	width: 100%;
+	height: 40px;
+	padding: 5px;
+	border: 1px solid #ccc;	
+	border-radius: 25px;
+}
+.login-box .login li button {
+	width: 100%;
+	height: 40px;
+	background: #004d95;
+	color: #fff;
+	border-radius: 25px;
+	transition: all 0.3s;
+}
+.login-box .login li button:hover {
+	background: #000;
+	border-radius: 0;
+}
+.login-box .login-btn {
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* 회원가입 스타일 */
+.join-box {
+	padding: 50px;
+}
+.join-box h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.join-box .join-form {
+	max-width:400px;
+	margin: 0 auto;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	padding: 20px;
+}
+
+.join-box .join-form input[type="text"] {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+.join-box .join-form input[type="password"] {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+.join-box .join-form select {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+.join-box .join-form label {
+	display: block;
+}
+.join-box .join-form ul li {
+	margin-bottom: 10px;
+}
+.join-box .join-form ul li label {
+	font-size: 15px;
+	color: #000;
+	margin-bottom: 3px;
+}
+
+.join-box .join-form ul li.gender span {
+	display: inline-block;
+}
+.join-box .join-form ul li.gender span label {
+	display: inline-block;
+	font-size: 13px;
+}
+.join-box .join-form ul li.address span.zipcode input {
+	width: 100px;
+	margin-right: 5px;
+}
+.join-box .join-form ul li.address span.zipcode button {
+	width: 100px;
+	height: 40px;
+	background: #004d95;
+	color: #fff;
+	border: 0;
+	transition: all 0.3s;
+}
+.join-box .join-form ul li.address span.zipcode button:hover {
+	background: #6817d3;
+	border-radius: 20px;
+}
+.join-box .join-form ul li.address span {
+	margin-bottom: 5px;
+	display: block;
+}
+
+.join-box .join-btn {
+	text-align: center;
+}
+.join-box .join-btn a {
+	display: inline-block;
+	background: #004d95;
+	color: #fff;
+	margin: 5px;
+	padding: 10px 0px;
+	width: 100px;
+	transition: all 0.3s;
+}
+.join-box .join-btn a:hover {
+	background: #03b700;
+	border-radius: 20px;
+}
+
+/* 공지사항 스타일 */
+/* 공지사항 테이블 */
+.notice-table {
+	background: #fff;
+}
+.notice-table ul.table-hd {
+	text-align: center; 
+	border-top: 2px solid #000;
+}
+.notice-table ul.table-bd {
+	text-align: center;
+}
+.notice-table ul.table-bd .subject{
+	text-align: left;
+}
+.notice-table ul li {
+	display: table; 
+	width: 100%;
+}
+.notice-table ul li > div {
+	display: table-cell; 
+	border-bottom: 1px solid #ccc; 
+	padding: 10px;
+}
+.notice-table ul li > div.no {
+	width: 10%;
+}
+.notice-table ul li > div.subject {
+	width: 50%;
+}
+.notice-table ul li > div.subject a {
+	font-weight: bold;
+	font-size: 14px;
+}
+.notice-table ul li > div.subject a:hover {
+	text-decoration: underline; 
+	color: #26649e;
+}
+.notice-table ul li > div.name {
+	width: 20%;
+}
+.notice-table ul li > div.date {
+	width: 20%;
+}
+/* 페이징 처리 */
+.paging {
+	margin: 20px 0;
+}
+.paging ul {
+	text-align: center;
+}
+.paging ul li {
+	display: inline-block;
+	margin: 5px 0px;
+}
+.paging ul li a {
+	display: block;
+	padding: 5px 10px;
+	border: 1px solid #000;
+	background: #fff;
+}
+.paging ul li.on a {
+	background: #000;
+	color: #fff;
+	border: 1px solid #000;
+}
+/* 글쓰기 버튼 */
+.bbs-btn-box {
+	text-align: right;
+}
+.bbs-btn-box a {
+	display: inline-block;
+	background: #004d95;
+	color: #fff;
+	border: 1px solid #004d95;
+	border-radius: 10px;
+	padding: 5px 10px;
+	margin: 5px;
+	transition: all 0.3s;
+	font-size: 16px;
+}
+.bbs-btn-box a:hover {
+	background: #005baf;
+}
+/* 공지사항 h1 */
+.notice-box h1 {
+	text-align: center;
+	margin: 20px 0;
+	font-size: 24px;
+}
+/* 검색창 */
+.search-box {
+	margin: 10px;
+	text-align: right;
+}
+.search-box input {
+	width: 100px;
+	border: 1px solid #ccc;
+	height: 30px;
+	padding: 5px;
+	margin: 5px 0;
+}
+.search-box button {
+	border: 1px solid #ccc;
+	height: 30px;
+	padding: 0px 20px;
+	margin: 5px 0;
+	background: #000;
+	color: #fff;
+}
+/* 콘텐츠 영역 */
+.contents {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* 공지사항 글쓰기 */
+/* 반응형 웹을 만들기에는 세로 정렬이 더 좋음 */
+.write-form {
+	border: 1px solid #000;
+	border-radius: 20px;
+	padding: 10px;
+	max-width:800px;
+	margin: 0 auto;
+}
+.write-form li {
+	margin-bottom: 10px;
+}
+.write-form label {
+	display: block;
+}
+.write-form input[type="text"]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 30px;
+}
+.write-form textarea{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 150px;
+}
+.write-form label.check-text {
+	display: inline-block;
+}
+.write-form li.check-box {
+	background: #fff;
+	padding: 10px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.write-form-btn {
+	max-width:800px;
+	margin: 20px auto;
+}
+
+/* 공지사항 View */
+.view h2 {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.view span {
+	display: inline-block;
+	padding-bottom: 10px;
+}
+.view .view-con {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 20px;
+	background: #fff;
+	font-size: 15px;
+}
+.view .file-down a {
+	display: block;
+	margin: 5px;
+	padding: 5px;
+	background: #e1e1e1;
+}
+.view .view-date {
+	color: #309bff;
+}
+
+.bbs-btn-box a.del {
+	background: #ff4242;
+}
+.bbs-btn-box a.mod {
+	background: #ff4242;
+}
+
+/* 갤러리 리스트 스타일 */
+.gallery-table > ul {
+	overflow: hidden;
+}
+.gallery-table > ul > li {
+	width: 25%;
+	float: left;
+	margin-bottom: 20px;
+}
+.gallery-table > ul > li:nth-child(4n+1) {
+	/* 4n+1 반복하면서 float을 적용하지 않음 */
+	clear:both;
+}
+.gallery-table > ul > li > div {
+	padding: 10px;
+}
+.gallery-table .thum {
+	padding-bottom: 0;
+	height: 280px;
+	overflow: hidden;
+}
+.gallery-table .info a {
+	display: block;
+	font-size: 15px;
+}
+.gallery-table .info a span {
+	color: #888;
+}
+
+/* 장소예약 스타일 */
+/* 갤러리와 거의 흡사하므로 갤러리 스타일을 약간 손보면 쉽게 적용 가능 */
+.booking-table > ul {
+	overflow: hidden;
+}
+.booking-table > ul > li {
+	margin-bottom: 20px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+}
+.booking-table > ul > li > div {
+	padding: 10px;
+	float: left;
+}
+
+.booking-table .thum {
+	text-align: center;
+	width: 15%;
+}
+.booking-table .thum a {
+	display: block;
+	padding: 5px;
+	background: #ccc;
+	border: 1px solid #e1e1e1;
+	max-height: 280px;
+	overflow: hidden;
+}
+.booking-table .thum img {
+	max-height: 280px;
+}
+
+.booking-table .info {
+	width: 85%;
+}
+.booking-table .info a {
+	display: block;
+	font-size: 17px;
+}
+.booking-table .info p {
+	font-size: 14px;
+	color: #444;
+	margin: 10px 0;
+	max-height: 55px;
+	overflow: hidden;
+	min-height: 55px;
+}
+.booking-table .info span {
+	color: #888;
+}	
+
+/* 장소예약 상세정보 스타일 */
+.booking-view {}
+
+.booking-view .photo-box {overflow: hidden;}
+.booking-view .photo-box .swiper-slide img {height: 280px;}
+
+.booking-view .photo-box .view-photo {float: left; width: 50%; height: 320px; padding: 5px;}
+.booking-view .photo-box .calendar {float: right; width: 50%; height: 320px; padding: 5px;}
+
+/* 달력 스타일 */
+.cal-box {border: 1px solid #ccc;}
+.cal-box ul {overflow: hidden; padding: 5px;}
+.cal-box ul li {float: left; width: 14.28%; text-align: center;}
+.cal-box ul li:first-child a span {color: #ff4c4c;}
+.cal-box ul li:last-child a span {color: #1000ff;}
+.cal-box ul li a {display: block; padding: 5px;}
+.cal-box ul li a span.off{color: #aaa;} /* 이번달에 해당하지 않는 날은 연하게 표시 */
+.cal-box ul li a span.today{color: #000; background: #8fffff; padding: 5px; border-radius: 5px;}
+.cal-box ul li a span.selected{color: #fff; background: #000; padding: 5px; border-radius: 5px;}
+.cal-box ul li a span:hover:not(.day){color: #fff; background: #000; padding: 5px; border-radius: 5px;}
+
+.cal-hd {text-align: center;}
+.cal-hd span {display:inline-block; margin: 10px; padding: 10px;}
+.cal-hd span.month {font-size: 19px; font-weight:bold;}
+
+/* 예약하기 버튼 */
+.view-btn {text-align: right; padding: 5px;}
+.view-btn a {display: inline-block; padding: 5px 10px; color: #fff; background: #000; transition: all 0.3s; border-radius: 5px;}
+.view-btn a:hover {background: #ccc; border-radius: 10px;}
+
+/* 상세설명 영역 */
+.view-detail {background: #fff; border: 1px solid #ccc; margin: 10px 5px; padding: 20px; min-height: 200px;}
+
+/* 마이 페이지 스타일 */
+.my-table {
+	background: #fff;
+}
+.my-table ul.table-hd {
+	text-align: center; 
+	border-top: 2px solid #000;
+}
+.my-table ul.table-bd {
+	text-align: center;
+}
+.my-table ul.table-bd .subject{
+	text-align: left;
+}
+.my-table ul li {
+	display: table; 
+	width: 100%;
+}
+.my-table ul li > div {
+	display: table-cell; 
+	border-bottom: 1px solid #ccc; 
+	padding: 10px;
+}
+.my-table ul li > div.no {
+	width: 10%;
+}
+.my-table ul li > div.subject {
+	width: 50%;
+}
+.my-table ul li > div.subject a {
+	font-weight: bold;
+	font-size: 14px;
+}
+.my-table ul li > div.subject a:hover {
+	text-decoration: underline; 
+	color: #26649e;
+}
+.my-table ul li > div.name {
+	width: 10%;
+}
+.my-table ul li > div.date {
+	width: 20%;
+}
+.my-table ul li > div.state {
+	width: 10%;
+}
+.my-table .table-bd .state .accept {color: #2fa100; font-weight: bold;}
+.my-table .table-bd .state .wait {color: #2f0aff; font-weight: bold;}
+.my-table .table-bd .state .deny {color: #ff0a0a; font-weight: bold;}
+.my-table .table-bd .state .cancel {color: #000; font-weight: bold;}
+
+/* 관리자 메뉴 스타일 */
+.adm-menu {background: #005baf; border-bottom: 1px solid #e1e1e1;}
+.adm-menu ul {text-align: center; }
+.adm-menu ul li {display: inline-block; margin: 5px;}
+.adm-menu ul li:before {content: ""; display: inline-block; width: 1px; height: 10px; background: #fff; margin-right: 15px;} /* 막대값을 넣어 구분선 생성 */
+.adm-menu ul li:last-child:after {content: ""; display: inline-block; width: 1px; height: 10px; background: #fff; margin-left: 15px;}
+.adm-menu ul li a {display: inline-block; padding: 5px 10px; color: #fff; font-size: 16px;}
+.adm-menu ul li a:hover {color: #fff700; font-weight: bold;}
+.adm-menu ul li.on a {color: #26649e; font-weight: bold;}
+
+/* 관리자 환경설정 스타일 */
+.admin-set {padding: 50px;}
+.admin-set h1 {text-align: center; margin-bottom: 20px;}
+
+.admin-set .join-form {max-width: 800px; margin: 0 auto; background: #fff; border: 1px solid #ccc; border-radius: 5px; padding: 20px;}
+.admin-set .join-form input[type="text"] {width: 100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
+.admin-set .join-form label {display: block;}
+.admin-set .join-form ul li {margin-bottom: 10px;}
+.admin-set .join-form ul li label {font-size: 15px; color: #000; margin-bottom: 3px;}
+.admin-set .join-form ul li.address span.zipcode input {width: 100px; margin-right: 5px;}
+.admin-set .join-form ul li.address span.zipcode button {width: 100px; height: 40px; background: #004d95; color: #fff; border: 0; transition: all 0.3s; border-radius: 5px;}
+.admin-set .join-form ul li.address span.zipcode button:hover {background: #6817d3; border-radius: 20px;}
+.admin-set .join-form ul li.address span {margin-bottom: 5px; display: block;}
+
+.admin-set .join-btn {text-align: center;}
+.admin-set .join-btn a {display: inline-block; background: #004d95; color: #fff; margin: 5px; padding: 10px 0px; width: 100px; transition: all 0.3s; border-radius: 5px;}
+.admin-set .join-btn a:hover {background: #03b700; border-radius: 20px;}
+
+/* 게시판 관리 스타일 */
+.board-table {background: #fff;}
+.board-table ul.board-hd {text-align: center; border-top: 2px solid #000;}
+.board-table ul.board-bd {text-align: center;}
+.board-table ul.board-bd .board-name{text-align: left;}
+.board-table ul li {display: table; width: 100%;}
+.board-table ul li > div {display: table-cell; border-bottom: 1px solid #ccc; padding: 10px;}
+.board-table ul li > div.no {width: 10%;}
+.board-table ul li > div.board-name {width: 50%;}
+.board-table ul li > div.board-name a {font-weight: bold; font-size: 14px;}
+.board-table ul li > div.board-name a:hover {text-decoration: underline; color: #26649e;}
+.board-table ul li > div.type {width: 10%;}
+.board-table ul li > div.date {width: 20%;}
+.board-table ul li > div.control {width: 10%;}
+.board-table ul li > div.control a:hover {font-weight: bold; font-size: 13px;}
+
+/* 게시판 생성 버튼 */
+.board-btn-box {text-align: right;}
+.board-btn-box a { display: inline-block; background: #004d95; color: #fff; border: 1px solid #004d95; border-radius: 10px; 
+padding: 5px 10px; margin: 5px; transition: all 0.3s; font-size: 16px;}
+.board-btn-box a:hover {background: #005baf;}
+
+
+/* 게시판 생성 스타일 */
+.create-board {padding: 50px;}
+.create-board h1 {text-align: center; margin-bottom: 20px; font-size: 24px;}
+
+.create-board .write-form {max-width: 600px; margin: 0 auto; background: #fff; border: 1px solid #ccc; border-radius: 5px; padding: 20px;}
+.create-board .write-form input[type="text"] {width: 100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
+.create-board .write-form label {display: block;}
+.create-board .write-form ul li {margin-bottom: 10px;}
+.create-board .write-form ul li label {font-size: 14px; color: #000;}
+
+.create-board .write-form select {width: 100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
+.create-board .write-form select option {font-size: 15px;}
+
+.create-board .check-box label.check-text {display: inline-block; font-size: 12px;}
+.create-board li.check-box {background: #fff; padding: 10px;}
+
+.create-board .write-btn {text-align: center;}
+.create-board .write-btn a {display: inline-block; background: #004d95; color: #fff; margin: 5px; padding: 10px 0px; width: 100px; transition: all 0.3s; border-radius: 5px;}
+.create-board .write-btn a:hover {background: #03b700; border-radius: 10px;}
