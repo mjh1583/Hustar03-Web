@@ -836,3 +836,115 @@ padding: 5px 10px; margin: 5px; transition: all 0.3s; font-size: 16px;}
 .create-board .write-btn {text-align: center;}
 .create-board .write-btn a {display: inline-block; background: #004d95; color: #fff; margin: 5px; padding: 10px 0px; width: 100px; transition: all 0.3s; border-radius: 5px;}
 .create-board .write-btn a:hover {background: #03b700; border-radius: 10px;}
+
+/* 회원관리 스타일 */
+.adm-mb-table {background: #fff;}
+.adm-mb-table ul.board-hd {text-align: center; border-top: 2px solid #000;}
+.adm-mb-table ul.board-bd {text-align: center;}
+.adm-mb-table ul.board-bd .board-name{text-align: left;}
+.adm-mb-table ul li {display: table; width: 100%;}
+.adm-mb-table ul li > div {display: table-cell; border-bottom: 1px solid #ccc; padding: 10px;}
+.adm-mb-table ul li > div.no {width: 5%;}
+.adm-mb-table ul li > div.name {width: 10%;}
+.adm-mb-table ul li > div.tel {width: 10%;}
+.adm-mb-table ul li > div.email {width: 20%;}
+.adm-mb-table ul li > div.birth {width: 10%;}
+.adm-mb-table ul li > div.address {width: 25%;}
+.adm-mb-table ul li > div.date {width: 10%;}
+.adm-mb-table ul li > div.control {width: 10%;}
+
+.adm-mb-table ul li > div.control a:hover {font-weight: bold; font-size: 13px;}
+
+
+/* 회원등록 스타일 */
+.adm-mb-form {
+	padding: 50px;
+}
+.adm-mb-form h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.adm-mb-form .join-form {
+	max-width:400px;
+	margin: 0 auto;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	padding: 20px;
+}
+
+.adm-mb-form .join-form input[type="text"] {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+.adm-mb-form .join-form input[type="password"] {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+.adm-mb-form .join-form select {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+.adm-mb-form .join-form label {
+	display: block;
+}
+.adm-mb-form .join-form ul li {
+	margin-bottom: 10px;
+}
+.adm-mb-form .join-form ul li label {
+	font-size: 15px;
+	color: #000;
+	margin-bottom: 3px;
+}
+
+.adm-mb-form .join-form ul li.gender span {
+	display: inline-block;
+}
+.adm-mb-form .join-form ul li.gender span label {
+	display: inline-block;
+	font-size: 13px;
+}
+.adm-mb-form .join-form ul li.address span.zipcode input {
+	width: 100px;
+	margin-right: 5px;
+}
+.adm-mb-form .join-form ul li.address span.zipcode button {
+	width: 100px;
+	height: 40px;
+	background: #004d95;
+	color: #fff;
+	border: 0;
+	transition: all 0.3s;
+}
+.adm-mb-form .join-form ul li.address span.zipcode button:hover {
+	background: #6817d3;
+	border-radius: 20px;
+}
+.adm-mb-form .join-form ul li.address span {
+	margin-bottom: 5px;
+	display: block;
+}
+
+.adm-mb-form .join-btn {
+	text-align: center;
+}
+.adm-mb-form .join-btn a {
+	display: inline-block;
+	background: #004d95;
+	color: #fff;
+	margin: 5px;
+	padding: 10px 0px;
+	width: 100px;
+	transition: all 0.3s;
+}
+.adm-mb-form .join-btn a:hover {
+	background: #03b700;
+	border-radius: 20px;
+}

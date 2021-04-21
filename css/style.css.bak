@@ -823,7 +823,7 @@ padding: 5px 10px; margin: 5px; transition: all 0.3s; font-size: 16px;}
 
 .create-board .write-form {max-width: 600px; margin: 0 auto; background: #fff; border: 1px solid #ccc; border-radius: 5px; padding: 20px;}
 .create-board .write-form input[type="text"] {width: 100%; height: 40px; border: 1px solid #ccc; padding: 5px;}
-.create-board .write-form label {display: block;}
+.create-board .write-form label {display: block; margin-bottom: 5px;}
 .create-board .write-form ul li {margin-bottom: 10px;}
 .create-board .write-form ul li label {font-size: 14px; color: #000;}
 
@@ -836,3 +836,99 @@ padding: 5px 10px; margin: 5px; transition: all 0.3s; font-size: 16px;}
 .create-board .write-btn {text-align: center;}
 .create-board .write-btn a {display: inline-block; background: #004d95; color: #fff; margin: 5px; padding: 10px 0px; width: 100px; transition: all 0.3s; border-radius: 5px;}
 .create-board .write-btn a:hover {background: #03b700; border-radius: 10px;}
+
+/* 회원관리 스타일 */
+
+
+/* 회원등록 스타일 */
+.adm-mb-form {
+	padding: 50px;
+}
+.adm-mb-form h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.adm-mb-form .join-form {
+	max-width:400px;
+	margin: 0 auto;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	padding: 20px;
+}
+
+.adm-mb-form .join-form input[type="text"] {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+.adm-mb-form .join-form input[type="password"] {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+.adm-mb-form .join-form select {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+.adm-mb-form .join-form label {
+	display: block;
+}
+.adm-mb-form .join-form ul li {
+	margin-bottom: 10px;
+}
+.adm-mb-form .join-form ul li label {
+	font-size: 15px;
+	color: #000;
+	margin-bottom: 3px;
+}
+
+.adm-mb-form .join-form ul li.gender span {
+	display: inline-block;
+}
+.adm-mb-form .join-form ul li.gender span label {
+	display: inline-block;
+	font-size: 13px;
+}
+.adm-mb-form .join-form ul li.address span.zipcode input {
+	width: 100px;
+	margin-right: 5px;
+}
+.adm-mb-form .join-form ul li.address span.zipcode button {
+	width: 100px;
+	height: 40px;
+	background: #004d95;
+	color: #fff;
+	border: 0;
+	transition: all 0.3s;
+}
+.adm-mb-form .join-form ul li.address span.zipcode button:hover {
+	background: #6817d3;
+	border-radius: 20px;
+}
+.adm-mb-form .join-form ul li.address span {
+	margin-bottom: 5px;
+	display: block;
+}
+
+.adm-mb-form .join-btn {
+	text-align: center;
+}
+.adm-mb-form .join-btn a {
+	display: inline-block;
+	background: #004d95;
+	color: #fff;
+	margin: 5px;
+	padding: 10px 0px;
+	width: 100px;
+	transition: all 0.3s;
+}
+.adm-mb-form .join-btn a:hover {
+	background: #03b700;
+	border-radius: 20px;
+}
