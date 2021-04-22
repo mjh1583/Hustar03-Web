@@ -6,7 +6,7 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <title>HUSATR_3rd Board-Create</title>
+  <title>HUSATR_3rd Banner-Create</title>
 
   <script src="../js/jquery-1.12.4.min.js"></script>
   <script src="../js/jquery-ui.min.js"></script>
@@ -39,25 +39,33 @@
 			<li><a href="./board.html">게시판 관리</a></li>
 			<li><a href="./member.html">회원 관리</a></li>
 			<li><a href="./popup.html">팝업 관리</a></li>
-			<li><a href="./banner.html">배너 관리</a></li>
+			<li class="on"><a href="./banner.html">배너 관리</a></li>
 			<li><a href="./booking.html">장소 관리</a></li>
 		</ul>
 	</div>
 	
-	<!-- 게시판 관리 게시판 생성 박스 -->
+	<!-- 배너 관리 팝업 생성 박스 -->
 	<div class="create-board">
-		<h1>게시판 생성</h1>
+		<h1>배너 생성</h1>
 		<div class="write-form">
 			<ul>
 				<li>
-					<label for="">게시판 명</label>
-					<input type="text" placeholder="게시판 명">
+					<label for="">배너 명</label>
+					<input type="text" placeholder="배너 명">
 				</li>
 				<li>
-					<label for="">게시판 타입</label>
+					<label for="">첨부파일</label>
+					<input type="file">
+				</li>
+				<li class="s-date-input">
+					<label for="">사용기간</label>
+					<input type="text" placeholder="시작일"> ~ <input type="text" placeholder="종료일">
+				</li>
+				<li>
+					<label for="">위치</label>
 					<select name="" id="">
-						<option value="">일반</option>
-						<option value="">갤러리</option>
+						<option value="">상단</option>
+						<option value="">하단</option>
 					</select>
 				</li>
 				<li class="check-box">
@@ -68,8 +76,8 @@
 			</ul>
 		</div>
 		<div class="write-btn">
-			<a href="./board.html">이전</a>
-			<a href="#none">저장</a>
+			<a href="./banner.html">이전</a>
+			<a href="#none">등록</a>
 		</div>
 	</div>
 

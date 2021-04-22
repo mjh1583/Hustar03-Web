@@ -6,7 +6,7 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <title>HUSATR_3rd Board-Management</title>
+  <title>HUSATR_3rd Booking-Management</title>
 
   <script src="../js/jquery-1.12.4.min.js"></script>
   <script src="../js/jquery-ui.min.js"></script>
@@ -40,28 +40,49 @@
 			<li><a href="./member.html">회원 관리</a></li>
 			<li><a href="./popup.html">팝업 관리</a></li>
 			<li><a href="./banner.html">배너 관리</a></li>
-			<li><a href="./booking.html">장소 관리</a></li>
+			<li class="on"><a href="./booking.html">장소 관리</a></li>
 		</ul>
 	</div>
 	
-	<!-- 게시판관리 화면 -->
+
+<style>
+	/* 게시판 관리 스타일 */
+.admin-booking-table {background: #fff;}
+.admin-booking-table ul.board-hd {text-align: center; border-top: 2px solid #000;}
+.admin-booking-table ul.board-bd {text-align: center;}
+.admin-booking-table ul.board-bd .board-name{text-align: left;}
+.admin-booking-table ul li {display: table; width: 100%;}
+.admin-booking-table ul li > div {display: table-cell; border-bottom: 1px solid #ccc; padding: 10px;}
+.admin-booking-table ul li > div.no {width: 10%;}
+.admin-booking-table ul li > div.board-name {width: 50%;}
+.admin-booking-table ul li > div.board-name a {font-weight: bold; font-size: 14px;}
+.admin-booking-table ul li > div.board-name a:hover {text-decoration: underline; color: #26649e;}
+.admin-booking-table ul li > div.type {width: 10%;}
+.admin-booking-table ul li > div.date {width: 20%;}
+.admin-booking-table ul li > div.control {width: 10%;}
+
+.admin-booking-table ul li > div.control a {display: inline-block; background: #005baf; color: #fff; padding: 5px; margin: 2px; border-radius: 5px;}
+.admin-booking-table ul li > div.control a:hover {background: #ccc; color: #fff; font-weight: bold; font-size: 12px;}
+
+</style>
+	<!-- 장소관리 화면 -->
 	<div class="contents">	
-		<!-- 게시판관리 화면 -->
+		<!-- 장소관리 화면 -->
 		<div class="notice-wrap">
 			<div class="notice-box">
-				<h1>게시판 관리</h1>
+				<h1>장소 관리</h1>
 				
 				<div class="search-box">
 					<input type="text">
 					<button>검색</button>
 				</div>
 				
-				<div class="board-table">
+				<div class="admin-booking-table">
 					<ul class="board-hd">
 						<li>
 							<div class="no">번호</div>
-							<div class="board-name">게시판 명</div>
-							<div class="type">게시판 타입</div>
+							<div class="type">이미지</div>
+							<div class="board-name">장소 명</div>				
 							<div class="date">등록일</div>
 							<div class="control">관리</div>
 						</li>
@@ -69,31 +90,31 @@
 					<ul class="board-bd">
 						<li>
 							<div class="no">3</div>
-							<div class="board-name"><a href="../bbs/notice_list.html">공지사항</a></div>
-							<div class="type">일반</div>
+							<div class="type"><img src="../img/r03.jpg" alt=""></div>
+							<div class="board-name">경북대학교 대강당</div>
 							<div class="date">2021-04-21</div>
 							<div class="control">
-								<a href="./board_form.html">수정</a> &nbsp;
+								<a href="./booking_form.html">수정</a> &nbsp;
 								<a href="#none">삭제</a>
 							</div>
 						</li>
 						<li>
 							<div class="no">2</div>
-							<div class="board-name"><a href="../bbs/gallery_list.html">갤러리</a></div>
-							<div class="type">갤러리</div>
+							<div class="type"><img src="../img/r02.jpg" alt=""></div>
+							<div class="board-name">라한 호텔</div>
 							<div class="date">2021-04-21</div>
 							<div class="control">
-								<a href="./board_form.html">수정</a> &nbsp;
+								<a href="./booking_form.html">수정</a> &nbsp;
 								<a href="#none">삭제</a>
 							</div>
 						</li>
 						<li>
 							<div class="no">1</div>
-							<div class="board-name"><a href="../bbs/free_list.html">자유게시판</a></div>
-							<div class="type">일반</div>
+							<div class="type"><img src="../img/r01.jpg" alt=""></div>
+							<div class="board-name">수성호텔</div>
 							<div class="date">2021-04-21</div>
 							<div class="control">
-								<a href="./board_form.html">수정</a> &nbsp;
+								<a href="./booking_form.html">수정</a> &nbsp;
 								<a href="#none">삭제</a>
 							</div>
 						</li>
@@ -113,7 +134,7 @@
 				</div>
 
 				<div class="board-btn-box">
-					<a href="./board_form.html">게시판 생성</a>
+					<a href="./booking_form.html">장소 등록</a>
 				</div>
 			</div>
 		</div>	

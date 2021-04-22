@@ -6,7 +6,7 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <title>HUSATR_3rd Board-Create</title>
+  <title>HUSATR_3rd Booking-Create</title>
 
   <script src="../js/jquery-1.12.4.min.js"></script>
   <script src="../js/jquery-ui.min.js"></script>
@@ -40,25 +40,34 @@
 			<li><a href="./member.html">회원 관리</a></li>
 			<li><a href="./popup.html">팝업 관리</a></li>
 			<li><a href="./banner.html">배너 관리</a></li>
-			<li><a href="./booking.html">장소 관리</a></li>
+			<li class="on"><a href="./booking.html">장소 관리</a></li>
 		</ul>
 	</div>
 	
-	<!-- 게시판 관리 게시판 생성 박스 -->
+	<!-- 장소 관리 장소 등록 박스 -->
 	<div class="create-board">
-		<h1>게시판 생성</h1>
+		<h1>장소 등록</h1>
 		<div class="write-form">
 			<ul>
 				<li>
-					<label for="">게시판 명</label>
-					<input type="text" placeholder="게시판 명">
+					<label for="">장소 명</label>
+					<input type="text" placeholder="장소 명">
 				</li>
 				<li>
-					<label for="">게시판 타입</label>
-					<select name="" id="">
-						<option value="">일반</option>
-						<option value="">갤러리</option>
-					</select>
+					<label for="">사진#01</label>
+					<input type="file">
+				</li>
+				<li>
+					<label for="">사진#02</label>
+					<input type="file">
+				</li>
+				<li>
+					<label for="">사진#03</label>
+					<input type="file">
+				</li>
+				<li>
+					<label for="">상세설명</label>
+					<textarea name="" id="" ></textarea>
 				</li>
 				<li class="check-box">
 					<label for="">사용여부</label>
@@ -68,7 +77,7 @@
 			</ul>
 		</div>
 		<div class="write-btn">
-			<a href="./board.html">이전</a>
+			<a href="./booking.html">이전</a>
 			<a href="#none">저장</a>
 		</div>
 	</div>
