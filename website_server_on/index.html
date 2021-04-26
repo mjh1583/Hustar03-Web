@@ -1,5 +1,4 @@
-<?php include ('./header.php'); ?>
- <body>
+	<?php include ('./header.php'); ?>
  	<!-- 상단 헤더 -->
  	<div class="header">
 		<div>
@@ -13,7 +12,8 @@
 					<li><a href="./member/join.html">회원가입</a></li>
 					<!-- 로그인 후
 					<li><a href="./member/login.html">로그아웃</a></li>
-					<li><a href="./member/join.html">회원정보수정</a></li>-->
+					<li><a href="./member/join.html">회원정보수정</a></li>
+					-->
 					<!-- 관리자 로그인시 -->
 					<li><a href="./adm/set.html">관리자</a></li>
 				</ul>
@@ -65,7 +65,7 @@
 	</div>
 	
 	<!-- 상단 배너 -->
-	<div class="banner">
+	<div class="banner" data-aos="flip-left">
 		<!-- Swiper -->
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
@@ -103,7 +103,7 @@
 	<!-- 메인 게시물 박스 -->
 	<div class="bbs-box">
 		<div>
-			<div class="board-box">
+			<div class="board-box" data-aos="fade-right" data-aos-delay="100"  data-aos-duration="2000">
 				<div class="tab-menu">
 					<ul>
 						<li class="on"><a href="#none">공지사항</a></li>
@@ -118,14 +118,14 @@
 							<a href="./bbs/notice_view.html">공지사항입니다.</a>
 							<span>2021-04-19</span>
 						</li>
-						<li><a href="./bbs/notice_view.html">공지사항입니다.</a><span>2021-04-19</span></li>
-						<li><a href="./bbs/notice_view.html">공지사항입니다.</a><span>2021-04-19</span></li>
-						<li><a href="./bbs/notice_view.html">공지사항입니다.</a><span>2021-04-19</span></li>
+						<li data-aos="fade-up" data-aos-delay="200"><a href="./bbs/notice_view.html">공지사항입니다.</a><span>2021-04-19</span></li>
+						<li data-aos="fade-up" data-aos-delay="300"><a href="./bbs/notice_view.html">공지사항입니다.</a><span>2021-04-19</span></li>
+						<li data-aos="fade-up" data-aos-delay="400"><a href="./bbs/notice_view.html">공지사항입니다.</a><span>2021-04-19</span></li>
 					</ul>
 				</div>
 			</div>
 
-			<div class="right-banner">
+			<div class="right-banner" data-aos="fade-left" data-aos-delay="300">
 				<!-- Swiper -->
 				<div class="swiper-container r-slide">
 					<div class="swiper-wrapper">
@@ -149,18 +149,6 @@
 					<div class="swiper-pagination"></div>
 				</div>
 			</div>
-		</div>
-	</div>
-
-	<!-- 하단 정보 -->
-	<div class="footer">
-		<div>
-			<h1>HUSTAR-3rd</h1>
-			<p>대구 동구 동내로 70</p>
-			<p>대표자 : 휴스타 3기 교육생</p>
-			<p>이메일 : macoder7@gmail.com</p>
-			<p>연락처 : 010-1234-5678</p>
-			<span>copyright(c) HUSTAR_3rd. All rights reserved.</span>
 		</div>
 	</div>
 
@@ -201,5 +189,5 @@
 			},
 		});
 	</script>
- </body>
-</html>
+
+<?php include('./footer.php'); ?>

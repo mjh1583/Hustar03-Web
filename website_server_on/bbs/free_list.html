@@ -1,0 +1,63 @@
+<?php include('../subheader.php'); ?>
+	<!-- 자유게시판 화면 -->
+	<div class="contents">	
+		<!-- 자유게시판 화면 -->
+		<div class="notice-wrap">
+			<div class="notice-box">
+				<h1>자유게시판</h1>
+				
+				<div class="search-box">
+					<input type="text">
+					<button>검색</button>
+				</div>
+				
+				<div class="notice-table">
+					<ul class="table-hd">
+						<li>
+							<div class="no">번호</div>
+							<div class="subject">제목</div>
+							<div class="name">글쓴이</div>
+							<div class="date">등록일</div>
+						</li>
+					</ul>
+					<ul class="table-bd">
+						<li data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+							<div class="no">3</div>
+							<div class="subject"><a href="../bbs/free_view.html">자유글 입니다.</a></div>
+							<div class="name">관리자</div>
+							<div class="date">2021-04-20</div>
+						</li>
+						<li data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
+							<div class="no">2</div>
+							<div class="subject"><a href="../bbs/free_view.html">홈페이지에 오신걸 환영합니다.</a></div>
+							<div class="name">관리자</div>
+							<div class="date">2021-04-20</div>
+						</li>
+						<li data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+							<div class="no">1</div>
+							<div class="subject"><a href="../bbs/free_view.html">자유글 입니다.</a></div>
+							<div class="name">관리자</div>
+							<div class="date">2021-04-20</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="paging">
+					<ul>
+						<li><a href="#none">처음으로</a></li>
+						<li><a href="#none">이전</a></li>
+						<li class="on"><a href="#none">1</a></li>
+						<li><a href="#none">2</a></li>
+						<li><a href="#none">3</a></li>
+						<li><a href="#none">다음</a></li>
+						<li><a href="#none">마지막</a></li>
+					</ul>
+				</div>
+
+				<div class="bbs-btn-box">
+					<a href="../bbs/free_write.html">글쓰기</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+<?php include('../footer.php'); ?>

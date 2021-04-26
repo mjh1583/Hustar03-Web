@@ -58,56 +58,90 @@
 	</div>
 	
 	<style>
+		/* 회사 소개 스타일 */
 		.intro {max-width: 1200px; margin: 0 auto; padding: 40px;}
-		.intro h1 {font-size: 24px; text-align: center; margin-bottom: 20px;}
-		.intro > p {font-size: 16px; text-align: center; margin-bottom: 20px;}
-		.intro .company-box .company-profile p {font-size: 14px; margin-bottom: 20px;} 
-		.intro .company-box .company-table {width: 60%; margin: 0 auto; border: 1px solid #000}
-		.intro .company-box .company-table ul {overflow: hidden;}
-		.intro .company-box .company-table ul li {float: left; font-size: 16px;}
+		.intro h1 {font-size: 42px; text-align: center; margin-bottom: 20px;}
+		.intro > p {font-size: 20px; text-align: center; margin-bottom: 20px;}
+		
+		.intro .company-box .company-intro .comp-name {margin-bottom: 30px;}
+		.intro .company-box .company-intro strong {font-size: 30px; text-align: center;}
+		.intro .company-box .company-intro .comp-intro {}
+		.intro .company-box .company-intro p {font-size: 20px; margin-bottom: 20px; border: 2px solid #ccc; padding: 10px; border-radius: 20px;} 
+
+		.intro .company-box .company-table {display: inline-block; width: 70%;}
+		.intro .company-box .company-table ul {overflow: hidden; width: 100%; border-bottom: 1px solid #ccc;}
+		.intro .company-box .company-table ul:first-child {border-top: 2px solid #000;}
+		.intro .company-box .company-table ul li {display: inline-block; font-size: 16px;}
+		.intro .company-box .company-table ul li.th {display: inline-block; width: 20%; padding: 10px; vertical-align: top;}
+		.intro .company-box .company-table ul li.td {display: inline-block; width: 70%; padding: 10px;}
+
+		.intro .company-box .left-box {display: inline-block; vertical-align: top; width: 23.5%; font-size: 20px; line-height: 28px; letter-spacing: -0.6px; text-align: center; font-weight: bold;}
 	</style>
+
 	<div class="intro">
 		<h1>Hustar 소개</h1>
-		<p>휴스타 소개를 합니다.</p>
-
-		<!-- <img src="../img/logo_w.png" alt=""> -->
-
+		<br><br>
+		<p>대구·경북의 미래 신산업을 이끌어 갈 혁신인재(Human Star) 양성 프로젝트!</p>
+		<p>HuStar 대경혁신인재양성프로젝트는 전국 최초로 지자체 주도로 기업이 원하는 혁신인재를 함께 키우고, 취업을 지원하여 지역이 함께 성장하기 위한 사업입니다.</p>
+		<p>대구시와 경상북도, 지역기업, 대학·연구기관이 함께 혁신인재를 키우고, 함께 성장하며, 함께 미래를 만들어갑니다.</p>
+		<br><br>
+		<div class="img-container">
+			<img src="../img/t01.jpg" alt="">
+		</div>
+		
+		<br><br>
 		<div class="company-box">
-			<div class="company-profile">
-				<p>소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개</p>
-				<br>
-				<p>소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개소개</p>
+			<div class="company-intro">
+				<div class="comp-name">
+					<strong>Hustar 사업 소개</strong>
+				</div>
+				<div class="comp-intro">
+					<p><b>혁신아카데미사업</b>은 대구·경북 청년들에게 8개월 동안 최고 수준의 고급 현장실무형 교육(5개월)과 기업인턴(3개월) 과정을 제공하고 지역 우수기업 취업 지원을 통해 지역이 함께 성장하기 위한 프로그램입니다. 혁신아카데미는 대구·경북의 미래 신산업 분야별로 대구혁신아카데미와 경북혁신아카데미로 구분하여 운영됩니다.
+대구·경북의 우수한 참여기업과 함께 교육커리큘럼을 구성하고 교육과정을 운영합니다. 프로젝트 중심의 집중 교육을 통해 협업능력과 문제해결 역량을 갖춘 혁신인재를 양성합니다.</p>
+					<p><b>혁신대학사업</b>은 전국 최초로 대구광역시가 주도하고 지역대학과 지역기업이 공동으로 교육과 취업을 연계하여 지역을 이끌어나갈 혁신인재를 양성하기 위한 특별한 프로그램입니다. 로봇, 물, 미래형자동차, 의료, ICT 분야의 혁신대학 소속 학부생을 대상으로 2년 동안 운영됩니다. 프로젝트 중심의 특화된 교육 프로그램을 우수한 참여기업들과 함께 운영하고 취업을 연계하여 현장실무 역량과 문제해결능력을 갖춘 혁신인재를 육성합니다.</p>
+				</div>
 			</div>
-
-			<div class="company-table">
-				<ul>
-					<li><b>설립연도</b></li>
-					<li>2021-04-21</li>
-				</ul>
-				<ul>
-					<li><b>대표</b></li>
-					<li>2021-04-21</li>
-				</ul>
-				<ul>
-					<li><b>본사위치</b></li>
-					<li>2021-04-21</li>
-				</ul>
-				<ul>
-					<li><b>연락처</b></li>
-					<li>2021-04-21</li>
-				</ul>
-				<ul>
-					<li><b>주요서비스</b></li>
-					<li>2021-04-21</li>
-				</ul>
-				<ul>
-					<li><b>주요사업</b></li>
-					<li>2021-04-21</li>
-				</ul>
-				<ul>
-					<li><b>전체인력</b></li>
-					<li>2021-04-21</li>
-				</ul>
+			
+			<br><br><br><br>
+			<div class="company-profile">
+				<div class="left-box">
+					Hustar Profile
+				</div>
+				<div class="company-table">
+					<ul>
+						<li class="th"><b>설립연도</b></li>
+						<li class="td">2019-12-21</li>
+					</ul>
+					<ul>
+						<li class="th"><b>대표</b></li>
+						<li class="td">권영진 대구시장</li>
+					</ul>
+					<ul>
+						<li class="th"><b>본사위치</b></li>
+						<li class="td">HuStar 대경혁신인재양성프로젝트추진단 대구 북구 연암로 40 대구시청별관 1층</li>
+					</ul>
+					<ul>
+						<li class="th"><b>연락처</b></li>
+						<li class="td">
+							<p>(재)대구테크노파크 HuStar팀전화 : 053-803-6890, 6891</p>
+							<p>이메일 : hustar@ttp.org</p>
+							<p>(재)경북테크노파크 HuStar팀전화 : 053-803-6892, 6895</p>
+							<p>이메일 : hustar@gbtp.or.kr</p>
+						</li>
+					</ul>
+					<ul>
+						<li class="th"><b>주요서비스</b></li>
+						<li class="td">대경혁신인재양성</li>
+					</ul>
+					<ul>
+						<li class="th"><b>주요사업</b></li>
+						<li class="td">혁신아카데미, 혁신대학</li>
+					</ul>
+					<ul>
+						<li class="th"><b>전체인력</b></li>
+						<li class="td">1000명</li>
+					</ul>
+				</div>
 			</div>
 		</div>	
 	</div>
