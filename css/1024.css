@@ -1,0 +1,89 @@
+/* 모바일 헤더 */
+.header {overflow: hidden; padding: 10px;}
+.header .logo h1 img {width: 80px;}
+.header .top-btn ul {margin-top: 5px;}
+.header .top-btn ul li a {font-size: 12px; padding: 10px 5px;}
+
+/* 모바일 메뉴 */
+.menu > div > ul > li {display: block;}
+.menu > div > ul > li a {font-size: 15px; margin: 5px 10px; border-bottom: 1px solid #fff;}
+
+.m-menu {position: absolute; right: 10px; top: 70px; z-index: 9999; display: block;}
+.m-menu a {display: block; width: 25px; height: 20px; position: relative; transition: all 0.3s;}
+.m-menu a span {width: 100%; height: 3px; background: #000; display: block; position: absolute; transition: all 0.3s;}
+.m-menu a span:nth-child(1) {top: 0px;}
+.m-menu a span:nth-child(2) {top: 8px;}
+.m-menu a span:nth-child(3) {bottom: 0px;}
+
+/* 햄버거 메뉴를 클릭하면 X 모양이 됨 */
+/* .m-menu a.active span:nth-child(1) {transform:rotate(-45deg) translateY(12px);}
+.m-menu a.active span:nth-child(2) {opacity: 0;} 투명도 
+.m-menu a.active span:nth-child(3) {transform:rotate(45deg) translateY(-12px);} */
+
+/* .m-menu a.active span:nth-of-type(1) {transform : translateY(9px) rotate(-315deg);}
+.m-menu a.active span:nth-of-type(2) {opacity : 0;}
+.m-menu a.active span:nth-of-type(3) {transform : translateY(-9px) rotate(315deg);}
+ */
+
+.m-menu a.active {transform: rotate(360deg);}
+.m-menu a.active span:nth-of-type(1) {transform: translateY(9px) rotate(-45deg);}
+.m-menu a.active span:nth-of-type(3) {transform: translateY(-9px) rotate(45deg);}
+.m-menu a.active span:nth-of-type(2) {opacity: 0;}
+
+/* 평소에는 메뉴 숨김 */
+.menu {position: fixed; z-index: 9999; left: -100%; width: 100%; max-width: 200px; height: 100%; transition: all 0.3s;}
+
+/* 햄버거 버튼 누르면 매뉴가 나옴 */
+html.active .menu {left: 0%; z-index: 9;}
+
+/* 모바일 서브메뉴 */
+.menu > div > ul > li > ul.submenu {position: relative; border-bottom: 0px solid #000;}
+.menu > div > ul > li > ul.submenu a {font-size: 12px;}
+
+/* 배너 이미지 크기 조절 */
+.banner .swiper-container img {max-width: 100%; height: auto;}
+
+/* 탭 메뉴 조절 */
+.tab-menu ul li a {padding: 1px 3px; font-size: 15px;}
+
+.bbs-box > div > .board-box {float: none; width: auto;}
+.bbs-box > div > .right-banner {float: none; width: auto;}
+.bbs-box > div > .board-box > div {padding: 5px 10px;}
+
+.tab-con ul li a {padding: 2px; font-size: 14px;}
+.tab-con ul li span {padding: 1px; font-size: 12px;}
+
+/* footer 조절 */
+.footer > div {padding: 10px;}
+.footer h1 {font-size: 12px; padding: 5px 0px;}
+.footer p {font-size: 10px;}
+.footer span {font-size: 10px;}
+
+/* subpage에 여백 적용 */
+.contents {padding: 10px;}
+
+/* 갤러리 게시판 조절 */
+.gallery-table .thum {300px;}
+.gallery-table > ul > li:nth-child(4n+1) {clear: unset;}
+.gallery-table > ul > li {width: 33.3%;}
+
+/* 장소예약 */
+.booking-table .thum {width: 35%;}
+.booking-table .info {width: 65%;}
+
+/* 장소예약 상세정보 */
+.booking-view .photo-box .view-photo {float: none; width: auto; height: auto;}
+.booking-view .photo-box .calendar {float: none; width: auto; height: auto;}
+
+/* 회사 소개 */
+.intro {padding: 10px;}
+.intro h1 {font-size: 24px; margin-bottom: 5px;}
+.intro > p { font-size: 14px; margin-bottom: 5px;}
+.intro .company-box .company-intro strong {font-size: 20px;}
+.intro .company-box .company-intro .comp-name {margin-bottom: 5px;}
+.intro .company-box .company-intro p {font-size: 14px; margin-bottom: 5px; border: 1px solid #ccc; padding: 5px; border-radius: 5px;}
+.intro .company-box .company-table ul li.th {padding: 2px; font-size: 12px; width: 25%;}
+.intro .company-box .company-table ul li.td {padding: 2px; font-size: 12px;}
+
+.intro .company-box .left-box {width: 20%;}
+.intro .company-box .company-table {width: 75%;}
